@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Алексей Игонин](https://up.htmlacademy.ru/adaptive/24/user/851543).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Кривокора] (https://htmlacademy.ru/profile/krivokora).
 
 ---
 
