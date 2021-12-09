@@ -1,0 +1,90 @@
+.page-header {
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 56px;
+}
+
+.page-header__logo {
+  display: block;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 2;
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  margin: 17px 17px 0 0;
+}
+
+.main-nav__toggle svg {
+  fill: #81b3d2;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle--exit {
+  padding: 0;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  width: 22px;
+  height: 22px;
+}
+
+.main-nav__toggle--cross {
+  transform: translateX(-50%);
+}
+
+.main-nav__wrapper {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.main-nav__list {
+  background-color: rgba(129, 179, 210, 1);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2);
+}
+
+.main-nav__text {
+  text-decoration: none;
+  color: #ffffff;
+}
