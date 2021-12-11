@@ -5,16 +5,9 @@ const modal =  document.querySelector('.main-nav__wrapper')
 openBtn.addEventListener('click', (e) => {
   e.preventDefault()
   modal.classList.add('active');
-});
+})
 
 closeBtn.addEventListener('click', (e) => {
   e.preventDefault()
   modal.classList.remove('active')
-});
-
-
-// const telem = document.querySelector('');
-
-// telem.addEventListener('click', function(event) {
-//   event.preventDefault()
-// });
+})
