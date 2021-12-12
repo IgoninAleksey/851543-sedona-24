@@ -1,3 +1,10 @@
+.page-main {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  margin: 0 auto;
+  width: 320px;
+}
+
 .main-intro {
   display: flex;
   position: relative;
@@ -47,10 +54,6 @@
   text-align: center;
 }
 
-.advantages__item {
-  background-color: #eeeeee;
-}
-
 .recommendations__item {
   background-color: #ffffff;
   position: relative;
@@ -74,7 +77,11 @@
   font-size: 18px;
 }
 
-.advantages__item--border {
+.advantages__item--modify {
+  background-color: #eeeeee;
+}
+
+.advantages__item--modify:nth-child(7) {
   border-top: 1px solid #d6d6d6;
   border-bottom: 1px solid #d6d6d6;
 }
@@ -110,6 +117,11 @@
   margin: 0;
 }
 
+.advantages__box {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__image {
   margin: 0 auto;
   width: 320px;
@@ -132,6 +144,7 @@
 }
 
 .booking {
+  position: relative;
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -173,5 +186,16 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+}
+
+.booking__map--narker {
+  position: absolute;
+  left: 146px;
+  top: 450px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
   }
 }
