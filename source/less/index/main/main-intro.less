@@ -1,0 +1,30 @@
+.main-intro {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 52px 0 67px 0;
+
+  &__logo {
+    @media (min-width: 768px) {
+      padding: 78px 0 90px 0;
+    }
+  }
+
+  &__angle {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../../img/back-tablet.jpg");
+  }
+
+  @media (min-width: 1280px) {
+    background-image: url("../../img/back-desktop.jpg");
+  }
+}

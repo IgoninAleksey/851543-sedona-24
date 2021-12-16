@@ -19,72 +19,77 @@
     justify-content: space-around;
     align-items: center;
   }
-}
 
-.contacts__list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-.contacts__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(129, 179, 210, 1);
-  margin: 6px;
-}
-
-.contacts__link svg {
-  fill: #ffffff;
-}
-
-.contacts__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 46px;
-  height: 48px;
-
-  &:hover {
-    background-color: #669ec0;
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
   }
 
-  &:active {
-    background-color: #5496bd;
-    fill: #ffffff50;
-  }
-}
-
-.contacts__hashtag {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.contacts__developers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contacts__developers--text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-.contacts__developers--logo {
-  &:hover {
-    fill: #81b3d2;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(129, 179, 210, 1);
+    margin: 6px;
   }
 
-  &:active {
-    fill: #000000;
-    opacity: 0.3;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      fill: #ffffff50;
+    }
+  }
+
+  &__hashtag {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
+
+  &__developers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    &:hover {
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: #000000;
+      opacity: 0.3;
+    }
+  }
+
+  &__accounts {
+    fill: #ffffff;
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
