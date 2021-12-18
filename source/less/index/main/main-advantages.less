@@ -1,0 +1,233 @@
+.main-recommendations {
+  position: relative;
+  list-style: none;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 10px 0 10px 70px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    padding: 20px 0 20px 0;
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: 400px 400px 400px;
+  }
+
+  &__item {
+    text-align: left;
+
+    &:not(:last-child) {
+      margin: 0 0 30px 0;
+
+      @media (min-width: 768px) {
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      text-align: center;
+      margin: 0;
+      padding: 36px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 26px 0 0 0;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 14px 0 0 0;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 18px;
+
+    @media (min-width: 768px) {
+      position: static;
+      width: 72px;
+      height: 75px;
+    }
+  }
+}
+
+.main-advantages {
+  &__list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0 0 0 0;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 256px 256px 256px;
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 400px 400px 400px;
+    }
+  }
+
+  &__item {
+    &:nth-child(1) {
+      @media (min-width: 768px) {
+        grid-column: 1/4;
+      }
+    }
+
+    &:nth-child(5) {
+      @media (min-width: 768px) {
+        grid-column: 1/4;
+      }
+    }
+  }
+
+  &__modify {
+    background-color: #eeeeee;
+    padding: 55px 0 39px 0;
+
+    &:nth-child(3) {
+      border-top: 1px solid #d6d6d6;
+      border-bottom: 1px solid #d6d6d6;
+
+      @media (min-width: 768px) {
+        border: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      border: none;
+      padding: 42px 20px 43px 20px;
+    }
+  }
+
+  &__title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__text {
+    &--two {
+      @media (min-width: 768px) {
+        order: 1;
+      }
+    }
+  }
+
+  &__number {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 14px 0 0 0;
+  }
+
+  &__description {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 14px 0 0 0;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    &--text {
+      color: #ffffff;
+      position: relative;
+      box-sizing: border-box;
+      background-color: @background-blue;
+      text-transform: uppercase;
+      padding: 55px 18px 39px 18px;
+
+      @media (min-width: 768px) {
+        width: 256px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 400px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__image {
+    &--city {
+      margin: 0 auto;
+      width: 320px;
+      height: 260px;
+      background-image: url("../../img/city.jpg");
+
+      @media (min-width: 768px) {
+        background-image: url("../../img/tablet-city.jpg");
+        margin: 0;
+        width: 512px;
+        height: 256px;
+      }
+
+      @media (min-width: 1280px) {
+        background-image: url("../../img/desktop-city.jpg");
+        width: 800px;
+      }
+    }
+
+    &--bridge {
+      margin: 0 auto;
+      width: 320px;
+      height: 260px;
+      background-image: url("../../img/devils-bridge.jpg");
+
+      @media (min-width: 768px) {
+        background-image: url("../../img/tablet-bridge.jpg");
+        margin: 0;
+        width: 512px;
+        height: 256px;
+      }
+
+      @media (min-width: 1280px) {
+        background-image: url("../../img/desktop-bridge.jpg");
+        width: 800px;
+      }
+    }
+  }
+
+  &__triangle {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    top: 0;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

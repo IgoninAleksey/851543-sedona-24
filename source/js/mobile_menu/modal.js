@@ -1,5 +1,5 @@
 const openBtn = document.querySelector('.main-nav__toggle')
-const closeBtn = document.querySelector('.main-nav__toggle--exit');
+const closeBtn = document.querySelector('.main-nav__exit');
 const modal =  document.querySelector('.main-nav__wrapper')
 
 openBtn.addEventListener('click', (e) => {
