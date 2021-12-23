@@ -1,0 +1,148 @@
+.gallery {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.gallery__list {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 324px 324px;
+    margin: 0;
+  }
+
+  @media (min-width: 1280px) {
+    justify-content: normal;
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+.gallery__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 23px 0 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    width: 324px;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: 1280px) {
+    width: 400px;
+  }
+
+  &:first-child {
+    border-top: 1px solid #e5e5e5;
+
+    @media (min-width: 768px) {
+      width: 648px;
+      grid-column: 1/3;
+      border: none;
+    }
+
+    @media (min-width: 1280px) {
+      width: 1200px;
+      grid-column: 1/4;
+    }
+  }
+}
+
+.gallery__images {
+  object-fit: cover;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: 768px) {
+    object-fit: cover;
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 400px;
+  }
+
+  &--adapt {
+    @media (min-width: 768px) {
+      object-fit: cover;
+      width: 648px;
+      height: 400px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 1200px;
+    }
+  }
+}
+
+.gallery__box {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 22px 20px 15px 20px;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: 1280px) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #00000073;
+    color: #ffffff;
+  }
+}
+
+.gallery__titel {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.gallery__author {
+  margin: 5px 0 0 0;
+}
+
+.gallery__rate {
+  display: flex;
+  align-items: baseline;
+}
+
+.gallery__link {
+  display: block;
+  color: #000000;
+  align-items: baseline;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.gallery__likes {
+  fill: #000000;
+
+  @media (min-width: 1280px) {
+    fill: #ffffff;
+  }
+}
+
+.gallery__counter {
+  margin: 0;
+}
