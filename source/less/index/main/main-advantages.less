@@ -145,13 +145,19 @@
   margin: 14px 0 0 0;
 }
 
-.main-advantages__box {
+.main-advantages__contain {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.main-advantages__box {
   &--text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: #ffffff;
     position: relative;
     box-sizing: border-box;
@@ -160,8 +166,7 @@
     padding: 55px 18px 39px 18px;
 
     @media (min-width: 768px) {
-      width: 256px;
-      flex-direction: column;
+      width: 274px;
     }
 
     @media (min-width: 1280px) {
@@ -170,8 +175,6 @@
   }
 
   &--two {
-    display: flex;
-    flex-direction: row;
     color: #ffffff;
     position: relative;
     box-sizing: border-box;
@@ -180,7 +183,7 @@
     padding: 55px 18px 39px 18px;
 
     @media (min-width: 768px) {
-      width: 256px;
+      width: 274px;
       flex-direction: column;
       order: 1;
     }
