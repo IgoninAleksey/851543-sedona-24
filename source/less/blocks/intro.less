@@ -1,17 +1,11 @@
 .intro {
   display: flex;
+  flex-direction: column;
   position: relative;
   background-image: url("../../img/back-desktop.jpg");
   background-repeat: no-repeat;
-
-  @media (min-width: 768px) {
-    background-image: url("../../img/back-desktop_w750.jpg");
-  }
-
-  @media (min-width: 1280px) {
-    background-image: url("../../img/back-desktop.jpg");
-    background-position: bottom;
-  }
+  background-position: center;
+  background-size: auto;
 }
 
 .intro__logo {
@@ -21,13 +15,17 @@
 
   @media (min-width: 768px) {
     width: 457px;
-    padding: 95px 0 117px 0;
+    padding: 151px 0 117px 0;
   }
 }
 
-.intro__triangle {
+.intro__angle {
   position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
   bottom: 0;
+  min-width: 100%;
+  height: 57px;
+  object-fit: cover;
+  background-image: url("../../img/intro-triangle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
