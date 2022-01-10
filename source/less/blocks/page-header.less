@@ -16,8 +16,17 @@
 
 .page-header__logo {
   display: block;
+  width: 102px;
+  height: 84px;
   position: absolute;
+  background-image: url("../../img/logotyle-mobile.svg");
   transform: translateX(-50%);
   left: 50%;
   z-index: 2;
+
+  @media (min-width: 1280px) {
+    width: 186px;
+    height: 96px;
+    background-image: url("../../img/logotype-desktop.svg");
+  }
 }
