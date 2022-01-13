@@ -1,0 +1,44 @@
+.attractions {
+  text-align: center;
+  border-top: 1px solid #f2f2f2;
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    grid-column: 1/3;
+  }
+}
+
+.attractions__list {
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  @media (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.attractions__item {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  padding: 0 0 10px 0;
+}
+
+.attractions__text {
+  margin: 0 0 0 20px;
+}
+
+.attractions__field {
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  border: none;
+  background-color: #f2f2f2;
+}
