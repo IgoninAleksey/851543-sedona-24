@@ -1,0 +1,30 @@
+.text-frame {
+  text-transform: uppercase;
+  margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      border-bottom: 1px solid #dbdbdb;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+  }
+}
+
+.text-frame__title {
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 45px 0 45px;
+  }
+}
