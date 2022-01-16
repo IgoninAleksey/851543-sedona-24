@@ -1,5 +1,5 @@
 
-.name {
+.username {
   text-align: center;
   min-width: 320px;
   text-transform: uppercase;
@@ -11,7 +11,7 @@
   }
 }
 
-.name__title {
+.username__title {
   margin: 0 0 20px 0;
 
   @media (min-width: 768px) {
@@ -19,27 +19,38 @@
   }
 }
 
-.name__list {
+.username__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.name__item {
+.username__item {
   display: flex;
   align-items: center;
   padding: 0 0 20px 0;
 }
 
-.name__text {
+.username__text {
   margin: 0 10px 0 0;
   font-weight: normal;
   color: #333333;
 }
 
-.name__field {
+.username__field {
   width: 100%;
   height: 58px;
   border: none;
   background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 0 0 3px #e5e5e5;
+    background-color: #ffffff;
+  }
 }

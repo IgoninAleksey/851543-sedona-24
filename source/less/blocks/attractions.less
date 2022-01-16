@@ -32,13 +32,40 @@
 }
 
 .attractions__text {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 0;
 }
 
 .attractions__field {
-  width: 46px;
-  height: 46px;
-  margin: 0;
-  border: none;
-  background-color: #f2f2f2;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &:checked + .attractions__text::before {
+    background-image: url("../../img/tick.svg");
+  }
+
+  &:not(:disabled):not(:checked) + .attractions__text:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:not(:disabled):active + .attractions__text::before {
+    opacity: 0.3;
+  }
+}
+
+.attractions__field + .attractions__text {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 28px;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
 }

@@ -53,37 +53,38 @@
         <div class="intro__angle">
         </div>
       </section>
-      <section class="main-slogan">
-        <p class="main-slogan__text">Оставьте свой отзыв</p>
-        <p class="main-slogan__advantages">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </section>
       <section class="form">
+        <h2 class="visually-hidden">Формирование отзыва</h2>
+        <div class="main-slogan">
+          <p class="main-slogan__text">Оставьте свой отзыв</p>
+          <p class="main-slogan__advantages">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
         <form class="form__container" action="https://echo.htmlacademy.ru/">
-          <div class="name">
-            <h2 class="name__title">Представьтесь:</h2>
-            <ul class="name__list">
-              <li class="name__item">
-                  <p class="name__text">имя:</p>
-                  <input class="name__field" type="text" name="name">
+          <div class="username">
+            <h3 class="username__title">Представьтесь:</h3>
+            <ul class="username__list">
+              <li class="username__item">
+                  <p class="username__text">имя:</p>
+                  <input class="username__field" type="text" name="name">
               </li>
-              <li class="name__item">
-                  <p class="name__text">фамилия:</p>
-                  <input class="name__field" type="text" name="surname">
+              <li class="username__item">
+                  <p class="username__text">фамилия:</p>
+                  <input class="username__field" type="text" name="surname">
               </li>
-              <li class="name__item">
-                <p class="name__text">отчество:</p>
-                <input class="name__field" type="text" name="patronymic">
+              <li class="username__item">
+                <p class="username__text">отчество:</p>
+                <input class="username__field" type="text" name="patronymic">
               </li>
             </ul>
           </div>
 
           <div class="feedback">
-            <span class="text-frame">
-              <h2 class="text-frame__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
-            </span>
+            <div class="text-frame">
+              <h3 class="text-frame__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h3>
+            </div>
             <ul class="feedback__list">
               <li class="feedback__item">
-                  <p class="feedback__text"><span class="feedback__text--display">Контактный</span> телефон*:</p>
+                  <p class="feedback__text"><span class="feedback__hidden">Контактный</span> телефон*:</p>
                   <div class="feedback__container">
                     <input class="feedback__field" type="tel" name="tel" placeholder="Введите телефон">
                     <div class="feedback__frame">
@@ -108,51 +109,51 @@
           </div>
 
           <div class="impression">
-            <h2 class="impression__title">ВАше Общее впечатление:</h2>
+            <h3 class="impression__title">Ваше Общее впечатление:</h3>
             <ul class="impression__list">
               <li class="impression__item">
-                  <input class="impression__field" type="radio" name="impression" value="positive">
-                  <p class="impression__text">Скорее положительное</p>
+                  <input class="impression__field" id="positive" type="radio" name="impression" value="positive">
+                  <label class="impression__text" for="positive">Скорее положительное</label>
               </li>
               <li class="impression__item">
-                  <input class="impression__field" type="radio" name="impression" value="negative">
-                  <p class="impression__text">Скорее отрицательное</p>
+                  <input class="impression__field" id="negative" type="radio" name="impression" value="negative">
+                  <label class="impression__text" for="negative">Скорее отрицательное</label>
               </li>
               <li class="impression__item">
-                  <input class="impression__field" type="radio" name="impression" value="refrain">
-                  <p class="impression__text">Затрудняюсь ответить</p>
+                  <input class="impression__field" id="refrain" type="radio" name="impression" value="refrain">
+                  <label class="impression__text" for="refrain">Затрудняюсь ответить</label>
               </li>
             </ul>
           </div>
 
           <div class="attractions">
-            <span class="text-frame">
-              <h2 class="text-frame__title">посещенные достопримечательности:</h2>
-            </span>
+            <div class="text-frame">
+              <h3 class="text-frame__title">посещенные достопримечательности:</h3>
+            </div>
             <ul class="attractions__list">
               <li class="attractions__item">
-                  <input class="attractions__field" type="checkbox" name="Devils Bridge" value="yes">
-                  <p class="attractions__text">Мост Дьявола</p>
+                  <input class="attractions__field" id="Devils-Bridge" type="checkbox" name="Devils Bridge" value="yes">
+                  <label class="attractions__text" for="Devils-Bridge">Мост Дьявола</label>
               </li>
               <li class="attractions__item">
-                  <input class="attractions__field" type="checkbox" name="The Bell Mountain" value="yes">
-                  <p class="attractions__text">Гора-Колокол</p>
+                  <input class="attractions__field" id="The-Bell-Mountain" type="checkbox" name="The Bell Mountain" value="yes">
+                  <label class="attractions__text" for="The-Bell-Mountain">Гора-Колокол</label>
               </li>
               <li class="attractions__item">
-                  <input class="attractions__field" type="checkbox" name="Slide Park" value="yes">
-                  <p class="attractions__text">Слайд-парк</p>
+                  <input class="attractions__field" id="Slide-Park" type="checkbox" name="Slide Park" value="yes">
+                  <label class="attractions__text" for="Slide-Park">Слайд-парк</label>
               </li>
               <li class="attractions__item">
-                  <input class="attractions__field" type="checkbox" name="Red Rocks" value="yes">
-                  <p class="attractions__text">Красные скалы</p>
+                  <input class="attractions__field" id="Red-Rocks" type="checkbox" name="Red Rocks" value="yes">
+                  <label class="attractions__text" for="Red-Rocks">Красные скалы</label>
               </li>
             </ul>
           </div>
 
           <div class="emotions">
-            <span class="text-frame">
-              <h2 class="text-frame__title">Опишите свои эмоции:</h2>
-            </span>
+            <div class="text-frame">
+              <h3 class="text-frame__title">Опишите свои эмоции:</h3>
+            </div>
             <textarea class="emotions__field" name="emotions" placeholder="Опишите подробно все свои восторги "></textarea>
           </div>
 
@@ -165,6 +166,7 @@
     </main>
     <footer class="page-footer">
       <section class="contacts">
+        <h2 class="visually-hidden">Обратная связь</h2>
         <p class="contacts__hashtag">#visitsedona</p>
         <ul class="contacts__list">
           <li class="contacts__item">
