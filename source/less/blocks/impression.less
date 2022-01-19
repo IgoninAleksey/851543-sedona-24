@@ -27,11 +27,41 @@
 }
 
 .impression__text {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 0;
 }
 
 .impression__field {
-  width: 48px;
-  height: 48px;
-  margin: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &:checked + .impression__text::before {
+    background-image: url("../../img/Shape.svg");
+  }
+
+  &:not(:disabled):not(:checked) + .impression__text:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:not(:disabled):active + .impression__text::before {
+    opacity: 0.3;
+  }
+}
+
+.impression__field + .impression__text {
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 28px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
 }
