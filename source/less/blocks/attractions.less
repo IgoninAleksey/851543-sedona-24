@@ -34,6 +34,7 @@
 
 .attractions__text {
   margin: 0 0 0 0;
+  cursor: pointer;
 }
 
 .attractions__field {
@@ -42,7 +43,7 @@
   opacity: 0;
 
   &:checked + .attractions__text::before {
-    background-image: url("../../img/tick.svg");
+    background-image: url("../img/tick.svg");
   }
 
   &:not(:disabled):not(:checked) + .attractions__text:hover::before {
