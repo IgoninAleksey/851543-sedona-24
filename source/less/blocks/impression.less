@@ -28,6 +28,7 @@
 
 .impression__text {
   margin: 0 0 0 0;
+  cursor: pointer;
 }
 
 .impression__field {
@@ -36,7 +37,7 @@
   opacity: 0;
 
   &:checked + .impression__text::before {
-    background-image: url("../../img/Shape.svg");
+    background-image: url("../img/Shape.svg");
   }
 
   &:not(:disabled):not(:checked) + .impression__text:hover::before {
