@@ -1,8 +1,19 @@
 .form {
   position: relative;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
   line-height: 26px;
+}
+
+.form__container {
+  @media (min-width: 768px) {
+    box-sizing: border-box;
+    padding: 0 64px;
+  }
+
+  @media (min-width: 1280px) {
+    box-sizing: border-box;
+    padding: 0 120px;
+  }
 }
