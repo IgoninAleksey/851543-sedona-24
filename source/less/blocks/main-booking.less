@@ -1,7 +1,7 @@
 .main-booking {
   position: relative;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-style: normal;
   line-height: 26px;
   text-transform: uppercase;
@@ -17,13 +17,23 @@
 
 .main-booking__title {
   margin: 0;
+  font-weight: bold;
   font-size: 21px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .main-booking__specification {
   margin: 10px 0 0 0;
   font-weight: 400;
   font-size: 14px;
+
+  @media (min-width: 768px) {
+    margin: 26px 0 0 0;
+    width: 435px;
+  }
 }
 
 .main-booking__button {

@@ -4,8 +4,17 @@
   position: relative;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: -400px;
+  background-position-y: -300px;
   background-size: auto;
+
+  @media (min-width: 768px) {
+    background-position: bottom;
+  }
+
+  @media (min-width: 1280px) {
+    background-position: bottom;
+  }
 }
 
 .intro__logo {
@@ -15,7 +24,7 @@
 
   @media (min-width: 768px) {
     width: 457px;
-    padding: 151px 0 117px 0;
+    padding: 95px 0 117px 0;
   }
 }
 

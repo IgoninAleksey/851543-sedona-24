@@ -25,6 +25,10 @@
   }
 }
 
+.main-nav:active .main-nav__wrapper {
+  visibility: visible;
+}
+
 .main-nav__wrapper {
   visibility: hidden;
   width: 100%;
@@ -34,6 +38,10 @@
 
   @media (min-width: 768px) {
     width: auto;
+    visibility: visible;
+  }
+
+  &:hover {
     visibility: visible;
   }
 }
@@ -128,6 +136,10 @@
 
   @media (min-width: 768px) {
     color: #000000;
+
+    &--open {
+      color: #766357;
+    }
 
     &:hover {
       color: #81b3d2;
