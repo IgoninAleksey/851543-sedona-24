@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="image/x-icon" rel="shortcut icon" href="./img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -102,10 +102,10 @@
               <div class="main-advantages__picture" >
                 <p class="visually-hidden">Фото городка</p>
                 <picture>
-                  <source media="(min-width: 768px)" src="./img/desktop-city.jpg">
+                  <source media="(min-width: 1280px)" srcset="./img/city@3x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/city@2x.jpg">
                   <img class="main-advantages__image main-advantages__image--city" src="./img/city.jpg" width="800" height="256" alt="Барбершоп «Бородинский»">
                 </picture>
-                <!-- <img class="main-advantages__image main-advantages__image--city" src="./img/city.jpg" alt="city" width="800" height="256"> -->
               </div>
             </div>
           </li>
@@ -158,7 +158,11 @@
               </div>
               <div class="main-advantages__picture main-advantages__picture--color">
                 <p class="visually-hidden">Мост дьявола</p>
-                <img class="main-advantages__image main-advantages__image--bridge" src="./img/devils-bridge.jpg" alt="devils-bridge" width="800" height="256">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="./img/bridge@3x.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/bridge@2x.jpg">
+                  <img class="main-advantages__image main-advantages__image--bridge" src="./img/devils-bridge.jpg" alt="devils-bridge" width="800" height="256">
+                </picture>
               </div>
             </div>
           </li>
@@ -241,6 +245,6 @@
         </a>
       </section>
     </footer>
-    <script  src="./js/mobile_menu/modal.js"></script>
+    <script  src="./js/modal.js"></script>
   </body>
 </html>

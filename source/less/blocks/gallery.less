@@ -2,6 +2,15 @@
   justify-content: center;
   min-width: 320px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    box-sizing: border-box;
+    padding: 0 60px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0;
+  }
 }
 
 .gallery__list {
@@ -59,11 +68,10 @@
   background-color: #5d5d29;
   object-fit: cover;
   width: 100%;
-  height: 280px;
 
   @media (min-width: 768px) {
+    display: flex;
     min-width: 100%;
-    height: 267px;
   }
 
   @media (min-width: 1280px) {
@@ -72,16 +80,6 @@
 
   &--adapt {
     background-color: #935324;
-
-    @media (min-width: 768px) {
-      object-fit: cover;
-      width: 648px;
-      height: 400px;
-    }
-
-    @media (min-width: 1280px) {
-      width: 1200px;
-    }
   }
 }
 
