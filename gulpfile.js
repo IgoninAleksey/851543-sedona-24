@@ -38,9 +38,9 @@ const html = () => {
 // Script
 
 const script = () => {
-  return gulp.src('source/js/modal.js')
+  return gulp.src('source/js/modal/modal.js')
   .pipe(terser())
-  .pipe(gulp.dest('build/js'))
+  .pipe(gulp.dest('build/js/modal'))
 }
 
 // Images
@@ -52,7 +52,7 @@ const script = () => {
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png,webp}')
   .pipe(gulp.dest('build/img'))
 }
 
@@ -66,10 +66,11 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () => {
+const svg = (done) => {
   gulp.src(['source/img/*.svg', '!source/img/sprite/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'))
+  done()
 }
 
 const sprite = () => {
